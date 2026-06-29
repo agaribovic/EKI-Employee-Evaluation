@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", var(--font-sans);
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  /* Custom EKI inspired brand colors */
+  --color-eki-green-50: #f0faf4;
+  --color-eki-green-100: #dbf3e5;
+  --color-eki-green-200: #b7e7cb;
+  --color-eki-green-500: #107c41; /* Professional EKI Green */
+  --color-eki-green-600: #0c6233;
+  --color-eki-green-700: #094a26;
+  --color-eki-green-800: #063119;
+  
+  --color-eki-yellow-500: #f2c94c; /* Gold Accent */
+  --color-eki-yellow-600: #dfb536;
+
+  --animate-pulse-slow: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Custom scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(16, 124, 65, 0.2);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(16, 124, 65, 0.4);
+}
+
+/* Slide print layout optimizations */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  .print-page {
+    page-break-after: always;
+    break-after: page;
+  }
+}
+

@@ -1,0 +1,6 @@
+{
+  "name": "EKI Procjena Rada Zaposlenika",
+  "description": "Profesionalna interaktivna prezentacija i funkcionalni prototip digitalnog rješenja za procjenu rada zaposlenika u MKD EKI, zasnovan na Microsoft Power Platform i M365 tehnologijama.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
